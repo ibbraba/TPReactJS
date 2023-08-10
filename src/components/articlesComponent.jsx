@@ -78,7 +78,7 @@ const Articles = (props) => {
 
 
                     <div className="card">
-                    <div className="card-header" style={{color : 'black'}}> {article.category} 
+                    <div className="card-header" style={{color : 'black'}}> {article.brand} 
                      </div>
                         
                         <img src={article.picture[0].pic1} className="card-img-top" alt="Card image cap" />

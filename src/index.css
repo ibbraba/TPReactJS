@@ -57,8 +57,6 @@ button:focus-visible {
 }
 
 nav{
-
-  width: 80vw;
   margin: 0 auto;
 }
 header{
@@ -74,7 +72,7 @@ nav ul{
 .card {
   padding: 2em;
   max-width: 430px;
-  margin: 50px;
+  margin: 10px;
   height: 800px;
   position: relative;
 }
@@ -101,6 +99,23 @@ li ::marker{
     left: 0;
     right: 0;
     width: 90px;
+}
+
+.single-article img{
+  max-width: 1000px;
+}
+
+.product-card{
+  height: auto;
+  MARGIN: 0 AUTO;
+  MARGIN-TOP: 30PX;
+}
+
+.span-size{
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 2px;
+  margin: 4px;
 }
 
 @media (prefers-color-scheme: light) {

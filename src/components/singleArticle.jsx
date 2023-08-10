@@ -20,11 +20,35 @@ const SingleArticleComponent = (props) => {
 
     return (
 
-        <div>
+        <div className='single-article'>
             <h1> {selectedArticle.name} </h1>
             <p>
                 {selectedArticle.picture[0].length}
             </p>
+
+            <div className='product-infos'>
+                <div className="card product-card text-white bg-dark mb-3" >
+                  
+                    <div className="card-body">
+                    <div className="card-header">{selectedArticle.brand}</div>
+
+                        <h5 className="card-title"></h5>
+                        <p className="card-text">{selectedArticle.content}</p>
+
+                        <p>Dispoinibilié : {selectedArticle.stock> 0 ? "En stock " : "Rupture de stock"}</p>
+
+                        <p>
+                        {selectedArticle.size.map( (taille) => <span className='span-size' key={taille}> {taille} </span>)}
+                        </p>
+
+                        <button className='btn btn-light' style={{marginTop: 30}}>  {selectedArticle.price} € </button>
+                     
+                    </div>
+                </div>
+            </div>
+
+            
+
 
             <div>
                 <img src={selectedArticle.picture[0].pic1} alt="First slide" />
