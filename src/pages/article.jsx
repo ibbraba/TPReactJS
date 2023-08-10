@@ -8,12 +8,12 @@ const SingleArticle = () => {
     
     const params = useParams()
     const { id }  = params
-    console.log(id);
+    console.log("Id article: " + id);
 
   
     return (
     <div>
-      <SingleArticleComponent selctedarticle={id} />
+      <SingleArticleComponent articleid={id} />
     </div>
   )
 }

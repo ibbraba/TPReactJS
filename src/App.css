@@ -44,22 +44,3 @@ a{
   }
 }
 
-.card {
-  padding: 2em;
-  max-width: 430px;
-  margin: 50px;
-}
-
-
-.read-the-docs {
-  color: #888;
-}
-
-.list{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-li ::marker{
-  display: none !important;
-}

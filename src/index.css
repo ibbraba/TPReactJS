@@ -20,7 +20,8 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: white;
+  text-decoration: none;
 }
 
 body {
@@ -58,11 +59,48 @@ button:focus-visible {
 nav{
 
   width: 80vw;
+  margin: 0 auto;
+}
+header{
+  margin-bottom: 100px;
 }
 
 nav ul{
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
+}
+
+.card {
+  padding: 2em;
+  max-width: 430px;
+  margin: 50px;
+  height: 800px;
+  position: relative;
+}
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li ::marker{
+  display: none !important;
+}
+
+.card-body a {
+  position: absolute;
+    bottom: 34px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90px;
 }
 
 @media (prefers-color-scheme: light) {

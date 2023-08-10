@@ -9,8 +9,16 @@ const Articles = (props) => {
 
     const category = props.category
 
+    articles.forEach(article => {
+
+        article.id = articles.indexOf(article)
+        console.log(article.id);
+    });
+
     // GET ALL, MEN ARTICLES OR WOMEN ARTICLES DEPENDING ON STATE
     
+    
+
     const menArticles = articles.filter(article =>{
         return  article.category === "h" || article.category === "mixe"
     })
@@ -78,7 +86,7 @@ const Articles = (props) => {
                         <div className="card-body">
                             <h5 className="card-title">{article.name}</h5>
                             <p className="card-text">{article.desc}</p>
-                            <Link to="article/}">{article.price} €</a>
+                            <Link className='btn btn-dark' to={`/article/${article.id}`}>{article.price} €</Link>
                         </div>
                     </div>
 
